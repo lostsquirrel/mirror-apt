@@ -14,6 +14,7 @@ FROM scratch
 
 COPY --from=builder /dist/bootstrap /
 COPY --from=builder /usr/share/zoneinfo /usr/share/zoneinfo
+COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
 ENV TZ=Asia/Shanghai
 ENV LANG=C.UTF-8
 ENTRYPOINT ["/bootstrap"]
