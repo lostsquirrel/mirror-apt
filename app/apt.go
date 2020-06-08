@@ -24,6 +24,8 @@ func (s *Instance) Start() { // Startup all dependencies
 	aptHandler := APTHandler{
 		sourceBase: map[string]string{
 			"ubuntu": "https://mirrors.aliyun.com",
+			"debian": "https://mirrors.ustc.edu.cn",
+			"debian-security": "https://mirrors.ustc.edu.cn",
 		},
 		targetBase: "/data/apt-mirror/mirror/mirrors.ustc.edu.cn/",
 	}

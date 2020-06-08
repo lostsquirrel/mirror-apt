@@ -1,7 +1,7 @@
 FROM registry.lisong.pub:5000/golang:1.13-buster AS builder
 
 ENV GO111MODULE=on
-ENV GOPROXY=https://goproxy.cn
+ENV GOPROXY=https://goproxy.cn,direct
 ENV CGO_ENABLED=0
 ADD . /dist
 WORKDIR /dist
