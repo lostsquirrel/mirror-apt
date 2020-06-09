@@ -26,6 +26,9 @@ func (s *Instance) Start() { // Startup all dependencies
 			"ubuntu": "https://mirrors.aliyun.com",
 			"debian": "https://mirrors.ustc.edu.cn",
 			"debian-security": "https://mirrors.ustc.edu.cn",
+			"pve": "http://download.proxmox.com/debian",
+			"corosync-3": "http://download.proxmox.com/debian",
+			"ceph-nautilus": "http://download.proxmox.wiki/debian",
 		},
 		targetBase: "/data/apt-mirror/mirror/mirrors.ustc.edu.cn/",
 	}
