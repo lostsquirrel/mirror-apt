@@ -29,6 +29,7 @@ func (s *Instance) Start() { // Startup all dependencies
 			"pve": "http://download.proxmox.com/debian",
 			"corosync-3": "http://download.proxmox.com/debian",
 			"ceph-nautilus": "http://download.proxmox.wiki/debian",
+			"docker-ce": "https://mirrors.ustc.edu.cn",
 		},
 		targetBase: "/data/apt-mirror/mirror/mirrors.ustc.edu.cn/",
 	}
