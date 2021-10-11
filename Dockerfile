@@ -1,4 +1,4 @@
-FROM registry.lisong.pub:5000/golang:1.13-buster AS builder
+FROM registry.lisong.pub:28500/sunrise/golang:1.16-buster AS builder
 
 ENV GO111MODULE=on
 ENV GOPROXY=https://goproxy.cn,direct
